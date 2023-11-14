@@ -1,5 +1,8 @@
 package com.javaCompentency.algorithm.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ImmediateSmallerElement {
 	/**
 	11. Immediate Smaller Element 
@@ -12,4 +15,16 @@ public class ImmediateSmallerElement {
 	need to change the array itself.
 	*/
 	
+	public static List<Integer> immediateSmallerElement(Integer[] input){
+		List<Integer> result = new ArrayList<>();
+		for(int i=0,j=1;j<input.length;i++,j++) {
+			if(input[i]>input[j]) {
+				result.add(input[j]);
+			}else if(input[i]<input[j]) {
+				result.add(-1);
+			}
+		}
+		result.add(-1);
+		return result;
+	}
 }

@@ -1,6 +1,6 @@
 package com.javaCompentency.algorithm.classes;
 
-import java.util.stream.Stream;
+import java.util.Arrays;
 
 public class ZigZag {
 
@@ -17,20 +17,15 @@ public class ZigZag {
 	*/
 	
 	public static void zigZag(Integer[] input) {
-		Integer[] in = {4,3,7,8,6,2,1};
-		for(int i=0;i<in.length;i++) {
-			for(int j=i+1;j<in.length;j++) {
-				
-				if(in[i]<in[j])
-					continue;
-				else if(in[i]>in[j])
-					continue;
-				else
-					continue;
-			}
-		}
-		
-		Stream.of(in).forEach(i->System.out.println(i));
+		 for (int i = 1; i <= input.length - 2; i += 2) {
+	            // swap the current element with the next
+	            // element
+	            int temp = input[i];
+	            input[i] = input[i + 1];
+	            input[i + 1] = temp;
+	        }
+		 
+		 System.out.println(Arrays.toString(input));
 	}
 	
 }

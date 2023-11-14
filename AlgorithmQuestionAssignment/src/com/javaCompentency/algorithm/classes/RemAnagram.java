@@ -1,8 +1,5 @@
 package com.javaCompentency.algorithm.classes;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class RemAnagram {
 	/*
 	15. Anagram of String 
@@ -15,19 +12,17 @@ public class RemAnagram {
 	and returns minimum characters needs to be deleted.
 	*/
 	public static Integer remAnagram(String in1,String in2){
-		char[] input = (in1+in2).toCharArray();
-		int count=0;
-		Map<String,Integer> mapcount = new HashMap<>();
-		for(int i=0;i<input.length;i++) {
-			for(int j=i+1;j<input.length;j++) {
-				if(input[i]!=input[j]) {
-					count++;
-				}
+		
+		int cnt=0;
+		if(in1.length()>in2.length()) {
+		for(int i=0;i<in1.length();i++) {
+			if(!in2.contains(String.valueOf(in1.charAt(i)))) {
+				cnt++;
 			}
-			mapcount.put(String.valueOf(input[i]), count);
 		}
-		
-		
-		return 0;
+		}else {
+			return -1;
+		}
+		return cnt+1;
 	}
 }

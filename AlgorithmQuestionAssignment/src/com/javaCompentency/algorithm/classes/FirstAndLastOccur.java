@@ -6,7 +6,7 @@ import java.util.List;
 public class FirstAndLastOccur {
 
 	/*
-	First and last occurrences of X 
+	18.First and last occurrences of X 
 	Given a sorted array having N elements, find the indices of the first and last occurrences of 
 	an element X in the given array. 
 	Note: If the number X is not found in the array, return '-1' as an array. 
