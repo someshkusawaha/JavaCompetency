@@ -16,7 +16,7 @@ public class FirstSecondSmallestNumber {
 	vector containing the smallest and second smallest element if possible, else return {-1,-1}.
 	 */	
 
-	public static String firstSecondSmallestNo(Integer[] input){
+	public String firstSecondSmallestNo(Integer[] input){
 
 		List<Integer> inlist = Arrays.asList(input).stream().distinct().sorted().collect(Collectors.toList());
 		if(inlist.size()>2)

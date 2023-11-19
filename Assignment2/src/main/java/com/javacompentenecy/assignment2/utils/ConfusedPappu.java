@@ -12,7 +12,7 @@ public class ConfusedPappu {
 	returns the answer. You need not take any input or print anything.
 	**/
 	
-	public static int confusedPappu(Integer number) {
+	public int confusedPappu(Integer number) {
 		char[] array = number.toString().toCharArray();
 		for(int i=0;i<array.length;i++) {
 			if(array[i] == '9') {

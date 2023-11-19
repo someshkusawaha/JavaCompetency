@@ -19,7 +19,7 @@ public class CountEvenSubsets {
 	Count of possible subsets.
 	 **/
 
-	public static List<List<Integer>> countEvenSubsets(Integer[] input){
+	public List<List<Integer>> countEvenSubsets(Integer[] input){
 		// To store the resulting subsets
 		List<Integer> v = Arrays.asList(input).stream().filter(i->i%2==0).distinct().collect(Collectors.toList());
 		Set<List<Integer>> res = new HashSet<>();

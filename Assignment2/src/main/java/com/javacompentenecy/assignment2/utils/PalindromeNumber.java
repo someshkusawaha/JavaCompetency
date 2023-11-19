@@ -9,7 +9,7 @@ public class PalindromeNumber {
 	function is_palindrome() which takes the number as input parameter and returns "Yes" if it 
 	is palindrome otherwise returns "No"(Without quotes).
 	**/
-	public static String palindromeNumber(Integer number) {
+	public String palindromeNumber(Integer number) {
 		int copyint = number;
 		int sum=0;
 

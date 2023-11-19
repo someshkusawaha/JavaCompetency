@@ -11,7 +11,7 @@ public class MinimumCharacters {
 	minimum number of characters to be added to make it a palindrome.
 	*/
 	
-	public static int addMinimunCharacter(String input) {
+	public int addMinimunCharacter(String input) {
 		char[] in=input.toCharArray();
 		char[] out = new char[input.length()];
 	

@@ -15,7 +15,7 @@ public class SecondLargestElement {
 	returns an integer denoting the answer. If 2nd largest element doesn't exist then return -1.
 	*/
 	
-    public static int secondLargest(Integer[] input) {
+    public int secondLargest(Integer[] input) {
 		
 		List<Integer> inlist = Arrays.asList(input);
 		if(inlist.size()<3)

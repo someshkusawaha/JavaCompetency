@@ -16,7 +16,7 @@ public class ThirdLargestElement {
 	less than 3 elements in the given array.
 	*/
 	
-	public static int thirdLargest(Integer[] input) {
+	public int thirdLargest(Integer[] input) {
 		
 		List<Integer> inlist = Arrays.asList(input);
 		if(inlist.size()<3)

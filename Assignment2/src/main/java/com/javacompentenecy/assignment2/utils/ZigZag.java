@@ -2,7 +2,7 @@ package com.javacompentenecy.assignment2.utils;
 
 import java.util.Arrays;
 
-public class ZigZag {
+class ZigZag {
 
 	/*
 	12. Convert array into Zig-Zag fashion 
@@ -16,7 +16,7 @@ public class ZigZag {
 	void. You need to modify the array itself.
 	*/
 	
-	public static void zigZag(Integer[] input) {
+	public Integer[] zigZag(Integer[] input) {
 		 for (int i = 1; i <= input.length - 2; i += 2) {
 	            // swap the current element with the next
 	            // element
@@ -26,6 +26,7 @@ public class ZigZag {
 	        }
 		 
 		 System.out.println(Arrays.toString(input));
+		 return input;
 	}
 	
 }

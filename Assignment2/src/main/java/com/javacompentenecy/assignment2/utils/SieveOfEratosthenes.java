@@ -14,7 +14,7 @@ public class SieveOfEratosthenes {
 	return the list of prime numbers less than equal to N.
 		*/
 	
-	public static List<Integer> sieveOfEratosthenes(Integer input){
+	public List<Integer> sieveOfEratosthenes(Integer input){
 		List<Integer> listprime = new ArrayList<>();
 		listprime.add(1);
 		for(int p=2;p<=input;p++) {

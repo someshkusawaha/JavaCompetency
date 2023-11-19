@@ -17,7 +17,7 @@ public class GoodBadString {
 	You don't need to read input or print anything. Your task is to complete the function 
 	isGoodorBad() which takes the String S as input and returns 0 or 1.
 	*/
-	public static boolean isGoodBadString(String input) {
+	public boolean isGoodBadString(String input) {
 		//"bcdaeiou??"
 		List<Character> list = new ArrayList<>();
 		list.add('a');

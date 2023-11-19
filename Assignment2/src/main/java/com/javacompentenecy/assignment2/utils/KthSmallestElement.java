@@ -16,7 +16,7 @@ public class KthSmallestElement {
 	function kthSmallest() which takes the array arr[], integers l and r denoting the starting and 
 	ending index of the array and an integer K as input and returns the Kth smallest element.
 	*/
-	 public static int kthSmallestElement(Integer[] input,int k) {
+	 public int kthSmallestElement(Integer[] input,int k) {
 			
 			List<Integer> inlist = Arrays.asList(input);
 			if(inlist.size()<3)

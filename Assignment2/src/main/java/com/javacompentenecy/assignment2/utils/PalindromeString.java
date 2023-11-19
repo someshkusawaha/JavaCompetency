@@ -9,7 +9,7 @@ public class PalindromeString {
 	accepts string S and returns an integer value 1 or 0.
 	**/
 	
-	public static int palindromeString(String input) {
+	public int palindromeString(String input) {
 		char[] in=input.toCharArray();
 		char[] out = new char[input.length()];
 	

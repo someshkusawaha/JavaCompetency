@@ -12,7 +12,7 @@ public class NthFibonacciSeries {
 	Series() which takes an Integer N as input and returns a Fibonacci Series up to the Nth term.
 	**/
 	
-	public static List<Integer> nthFibonacciSeries(Integer number) {
+	public List<Integer> nthFibonacciSeries(Integer number) {
 		List<Integer> fib = new ArrayList<>();
 		fib.add(0);
 		fib.add(1);

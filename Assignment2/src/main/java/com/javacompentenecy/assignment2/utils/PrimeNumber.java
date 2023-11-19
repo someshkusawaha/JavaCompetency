@@ -10,7 +10,7 @@ public class PrimeNumber {
 		isPrime() which takes an integer N as input parameters and returns an integer, 1 if N is a 
 		prime number or 0 otherwise.
 		**/
-		public static Integer primeNumber(Integer number) {
+		public Integer primeNumber(Integer number) {
 			int cnt = 0;
 			for(int i=2;i<=number;i++) {
 				if(number%i == 0) {

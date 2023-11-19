@@ -17,7 +17,7 @@ public class UniqueSubsets {
 	parameters and returns list of all possible unique subsets in lexicographical order.
 	**/
 	
-	public static List<List<Integer>> uniqueSubsets(Integer[] input){
+	public List<List<Integer>> uniqueSubsets(Integer[] input){
 		// To store the resulting subsets
 		List<Integer> v = Arrays.asList(input);
 		Set<List<Integer>> res = new HashSet<>();

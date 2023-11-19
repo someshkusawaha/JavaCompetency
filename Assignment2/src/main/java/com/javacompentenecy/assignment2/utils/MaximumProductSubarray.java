@@ -19,7 +19,7 @@ public class MaximumProductSubarray {
 	Note: Use 64-bit integer data type to avoid overflow
 	 */
 	
-	public static int maxProductSubarray(Integer[] input) {
+	public int maxProductSubarray(Integer[] input) {
 		// To store the resulting subsets
 				List<Integer> v = Arrays.asList(input);
 				Set<List<Integer>> res = new HashSet<>();
@@ -57,8 +57,6 @@ public class MaximumProductSubarray {
 					}
 					finalint.add(product);
 				}
-				
-				System.out.println(finalint);
 				
 		return finalint.stream().distinct().max((n1,n2)->n1.compareTo(n2)).get();
 	}

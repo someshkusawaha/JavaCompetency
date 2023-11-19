@@ -10,16 +10,16 @@ public class RemAnagram {
 	Your Task: 
 	Complete the function remAnagram() which takes two strings S1, S2 as input parameter, 
 	and returns minimum characters needs to be deleted.
-	*/
-	public static Integer remAnagram(String in1,String in2){
-		
+	 */
+	public Integer remAnagram(String in1,String in2){
+
 		int cnt=0;
 		if(in1.length()>in2.length()) {
-		for(int i=0;i<in1.length();i++) {
-			if(!in2.contains(String.valueOf(in1.charAt(i)))) {
-				cnt++;
+			for(int i=0;i<in1.length();i++) {
+				if(!in2.contains(String.valueOf(in1.charAt(i)))) {
+					cnt++;
+				}
 			}
-		}
 		}else {
 			return -1;
 		}

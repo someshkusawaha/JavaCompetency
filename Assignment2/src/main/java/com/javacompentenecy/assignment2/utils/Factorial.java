@@ -10,7 +10,7 @@ public class Factorial {
 	factorial of N.
 	 **/
 
-	public static int factorial(Integer number) {
+	public int factorial(Integer number) {
 		int fact=1;
 		for(int i=number;i!=0;i--) {
 			fact = i*fact;

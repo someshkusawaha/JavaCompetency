@@ -9,7 +9,7 @@ public class MaximumAreaRectangle {
 	area. Use area() function in Rectangle class.
 	**/
 	
-	public static int maximumAreaRectangle(Rectangle[] input){
+	public int maximumAreaRectangle(Rectangle[] input){
 		int area = 0;
 		int max=0;
 		for(int i=0; i<input.length;i++) {

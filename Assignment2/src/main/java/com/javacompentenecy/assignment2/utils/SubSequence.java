@@ -11,7 +11,7 @@ public class SubSequence {
 	subsequence of B or not.
 
 	 */
-	public static boolean isSubSequence(String in1, String in2){
+	public boolean isSubSequence(String in1, String in2){
 
 		for(int i=in1.length()-1,j=in2.length()-1;i>=0&&j>=0;) {
 			if(in1.charAt(i)==in2.charAt(j)) {

@@ -12,7 +12,7 @@ public class MissingNumber {
 	takes array and N as input parameters and returns the value of the missing number.
 	*/
 	
-	public static int missingNumber(Integer[] input,Integer size) {
+	public int missingNumber(Integer[] input,Integer size) {
 		Arrays.sort(input);
 		for(int i=1;i<size;i++) {
 			if(i!=input[i-1]) {

@@ -12,7 +12,7 @@ public class PairsCount {
 	number of pairs that have sum K.
 	*/
 	
-	public static int getPairsCount(Integer[] input,Integer target) {
+	public int getPairsCount(Integer[] input,Integer target) {
 		int count = 0;
 		for(int i=0;i<input.length;i++) {
 			for(int j=i+1;j<input.length;j++) {

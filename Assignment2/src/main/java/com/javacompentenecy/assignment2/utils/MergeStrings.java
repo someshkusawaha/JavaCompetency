@@ -13,7 +13,7 @@ public class MergeStrings {
 	by merging both S1 and S2 alternatively starting from S1.
 	*/
 	
-	public static String mergeStrings(String in1,String in2) {
+	public String mergeStrings(String in1,String in2) {
 		char[] in1array = in1.toCharArray();
 		char[] in2array = in2.toCharArray();
 		StringBuffer sf = new StringBuffer();

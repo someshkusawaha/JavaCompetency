@@ -16,7 +16,7 @@ public class FirstAndLastOccur {
 	integers containing the indices of first and last occurence of X.
 	 */
 
-	public static String firstAndLastOccur(Integer[] input,Integer target) {
+	public String firstAndLastOccur(Integer[] input,Integer target) {
 		List<Integer> outlist = new ArrayList<>();
 		for(int i=0;i<input.length;i++) {
 			if(input[i]==target) {

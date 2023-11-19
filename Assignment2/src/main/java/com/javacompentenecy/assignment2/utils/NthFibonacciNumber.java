@@ -14,7 +14,7 @@ public class NthFibonacciNumber {
 	takes n as input parameter and returns nth fibonacci number.
 	**/
 	
-	public static int nthFibonacciNumber(Integer number) {
+	public int nthFibonacciNumber(Integer number) {
 		List<Integer> fib = new ArrayList<>();
 		fib.add(0);
 		fib.add(1);

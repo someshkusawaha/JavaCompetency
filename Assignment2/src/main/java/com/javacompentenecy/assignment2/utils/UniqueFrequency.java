@@ -17,7 +17,7 @@ public class UniqueFrequency {
 	isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns 
 	a boolean.
 	 */
-	public static boolean checkUniqueFrequency(Integer[] input) {
+	public boolean checkUniqueFrequency(Integer[] input) {
 		
 		int cnt=0;
 		List<Integer> feq = new ArrayList<>();
