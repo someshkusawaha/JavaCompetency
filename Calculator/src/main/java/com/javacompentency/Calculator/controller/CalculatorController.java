@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.javacompentency.Calculator.service.CalculatorService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "Calculator API")
 @RestController
-public class CalculatorController {
+public class CalculatorController implements CalculatorApi{
 	
 	@Autowired
 	CalculatorService calculatorService;
