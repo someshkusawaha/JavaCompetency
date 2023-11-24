@@ -1,7 +1,5 @@
 package com.javacompentency.Calculator.controller;
 
-import java.util.Map;
-
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,7 +17,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> addition(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
+	public String addition(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
 			@RequestParam @Parameter(description = "number2", example = "10" )Integer number2 );
 	
 	@Operation(summary = "subtraction", description = "")
@@ -28,7 +26,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> subtraction(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
+	public String subtraction(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
 			@RequestParam @Parameter(description = "number2", example = "10" )Integer number2 );
 	
 	@Operation(summary = "multiplication", description = "")
@@ -37,7 +35,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> multiplication(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
+	public String multiplication(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
 			@RequestParam @Parameter(description = "number2", example = "10" )Integer number2);
 	
 	@Operation(summary = "division", description = "")
@@ -46,7 +44,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> division(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
+	public String division(@RequestParam @Parameter(description = "number1", example = "10" )Integer number1,
 			@RequestParam @Parameter(description = "number2", example = "10" )Integer number2 );
 	
 	@Operation(summary = "square", description = "")
@@ -55,7 +53,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> square(@PathVariable @Parameter(description = "number1", example = "10" )Integer number);
+	public String square(@PathVariable @Parameter(description = "number1", example = "10" )Integer number);
 	
 	@Operation(summary = "squareroot", description = "")
 	@ApiResponse(responseCode = "200", description = "Ok", content = @Content)
@@ -63,7 +61,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> squareroot(@PathVariable @Parameter(description = "number1", example = "10" )Integer number);
+	public String squareroot(@PathVariable @Parameter(description = "number1", example = "10" )Integer number);
 	
 	@Operation(summary = "factorial", description = "")
 	@ApiResponse(responseCode = "200", description = "Ok", content = @Content)
@@ -71,7 +69,7 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> factorial(@PathVariable @Parameter(description = "number1", example = "10" )Integer number);
+	public String factorial(@PathVariable @Parameter(description = "number1", example = "10" )Integer number);
 	
 	@Operation(summary = "minmax", description = "")
 	@ApiResponse(responseCode = "200", description = "Ok", content = @Content)
@@ -79,5 +77,5 @@ public interface CalculatorApi {
 	@ApiResponse(responseCode = "406", description = "Not Acceptable", content = @Content)
 	@ApiResponse(responseCode = "400", description = "Incorrect Request", content = @Content)
 	@ApiResponse(responseCode = "500", description = "Service Failure", content = @Content)
-	public Map<String,String> minmax(@RequestBody MinMax minmax);
+	public String minmax(@RequestBody MinMax minmax);
 }
